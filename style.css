@@ -1,0 +1,83 @@
+
+/* Fonts: Inter for UI, Merriweather for headings */
+:root {
+  --bg: #ffffff;
+  --text: #1f2937;
+  --muted: #6b7280;
+  --primary: #0b6bcb;   /* academic blue */
+  --accent: #0ea5e9;    /* light blue for badges */
+  --card: #f8fafc;
+  --border: #e5e7eb;
+  --maxw: 960px;
+}
+
+* { box-sizing: border-box; }
+
+body {
+  margin: 0;
+  background: var(--bg);
+  color: var(--text);
+  font-family: Inter, system-ui, -apple-system, Segoe UI, Roboto, "Helvetica Neue", Arial, sans-serif;
+  line-height: 1.6;
+}
+
+.container { max-width: var(--maxw); margin: 0 auto; padding: 0 1.25rem; }
+
+.site-header {
+  border-bottom: 1px solid var(--border);
+  background: linear-gradient(180deg, #f9fbff, #ffffff);
+  padding: 2.5rem 0;
+}
+
+.profile { display: grid; grid-template-columns: 100px 1fr; gap: 1rem; align-items: center; }
+.headshot { width: 100px; height: 100px; border-radius: 50%; object-fit: cover; border: 2px solid var(--border); }
+
+.name { margin: 0; font-family: Merriweather, Georgia, serif; font-size: 1.75rem; }
+.title { margin: 0.25rem 0 0.5rem; color: var(--muted); }
+.quick-links a { color: var(--primary); text-decoration: none; margin-right: 0.5rem; }
+.quick-links a:hover { text-decoration: underline; }
+
+main section { padding: 2rem 0; border-bottom: 1px solid var(--border); }
+h2 {
+  font-family: Merriweather, Georgia, serif;
+  font-size: 1.4rem;
+  margin-bottom: 0.75rem;
+  border-left: 4px solid var(--primary);
+  padding-left: 0.5rem;
+}
+
+.pub-list { list-style: none; padding: 0; margin: 0; }
+.pub-list li {
+  padding: 0.75rem 0;
+  border-bottom: 1px dashed var(--border);
+}
+.pub-title { display: block; font-weight: 600; }
+.pub-authors, .pub-venue { display: inline-block; color: var(--muted); margin-right: 0.5rem; }
+
+.cards { display: grid; grid-template-columns: repeat(auto-fit, minmax(260px, 1fr)); gap: 1rem; }
+.card {
+  background: var(--card);
+  border: 1px solid var(--border);
+  border-radius: 8px;
+  padding: 1rem;
+}
+.tags { color: var(--muted); font-size: 0.9rem; }
+
+.badge {
+  display: inline-block;
+  margin-top: 0.5rem;
+  margin-right: 0.5rem;
+  padding: 0.25rem 0.5rem;
+  border-radius: 999px;
+  border: 1px solid var(--accent);
+  color: var(--primary);
+  text-decoration: none;
+  font-size: 0.9rem;
+}
+.badge:hover { background: #eef6ff; }
+
+.site-footer {
+  padding: 1.25rem 0;
+  color: var(--muted);
+  text-align: center;
+}
