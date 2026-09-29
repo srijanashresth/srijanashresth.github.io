@@ -49,11 +49,7 @@ app.get(['/teaching', '/teaching.html'], (req, res) => {
   res.redirect(301, '/#teaching');
 });
 
-// Image alias redirects to single canonical files
-app.get(['/earth_banner.jpg', '/earth_banner', '/earth-banner'], (req, res) => {
-  res.redirect(301, '/earth-banner.jpg');
-});
-
+// Friendly image alias redirects
 app.get(['/square headshot.jpg', '/square%20headshot.jpg', '/square-headshot.jpg'], (req, res) => {
   res.redirect(301, '/headshot.jpg');
 });
