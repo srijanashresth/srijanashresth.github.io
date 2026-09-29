@@ -16,18 +16,31 @@ app.get('/', (req, res) => {
   res.sendFile(path.join(__dirname, 'index.html'));
 });
 
-// Support extensionless clean URLs (e.g. /about -> /about.html)
-app.use((req, res, next) => {
-  if (req.method !== 'GET' && req.method !== 'HEAD') {
-    return next();
-  }
-  const cleanPath = req.path.replace(/\/$/, '');
-  const potentialHtml = path.join(__dirname, `${cleanPath}.html`);
-  res.sendFile(potentialHtml, (err) => {
-    if (err) {
-      next();
-    }
-  });
+// Redirect legacy page URLs to their single-page anchor sections
+app.get(['/about', '/about.html', '/personal-profile', '/personal-profile.html'], (req, res) => {
+  res.redirect(301, '/#about');
+});
+
+app.get(['/publications', '/publications.html'], (req, res) => {
+  res.redirect(301, '/#publications');
+});
+
+app.get(['/resume', '/resume.html', '/cv'], (req, res) => {
+  res.redirect(301, '/#cv');
+});
+
+// Image alias redirects to single canonical files
+app.get(['/earth_banner.jpg', '/earth_banner', '/earth-banner'], (req, res) => {
+  res.redirect(301, '/earth-banner.jpg');
+});
+
+app.get(['/square headshot.jpg', '/square%20headshot.jpg', '/square-headshot.jpg'], (req, res) => {
+  res.redirect(301, '/headshot.jpg');
+});
+
+// Fallback all other GET routes to index.html for pure single-page experience
+app.get('*', (req, res) => {
+  res.sendFile(path.join(__dirname, 'index.html'));
 });
 
 app.listen(PORT, '0.0.0.0', () => {
