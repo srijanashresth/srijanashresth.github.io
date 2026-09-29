@@ -26,7 +26,27 @@ app.get(['/publications', '/publications.html'], (req, res) => {
 });
 
 app.get(['/resume', '/resume.html', '/cv'], (req, res) => {
-  res.redirect(301, '/#cv');
+  res.redirect(301, '/SrijanaShresthaResume.pdf');
+});
+
+app.get(['/experience', '/experience.html'], (req, res) => {
+  res.redirect(301, '/#experience');
+});
+
+app.get(['/education', '/education.html'], (req, res) => {
+  res.redirect(301, '/#education');
+});
+
+app.get(['/skills', '/skills.html'], (req, res) => {
+  res.redirect(301, '/#skills');
+});
+
+app.get(['/projects', '/projects.html'], (req, res) => {
+  res.redirect(301, '/#projects');
+});
+
+app.get(['/teaching', '/teaching.html'], (req, res) => {
+  res.redirect(301, '/#teaching');
 });
 
 // Image alias redirects to single canonical files

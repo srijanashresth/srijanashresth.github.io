@@ -2,13 +2,20 @@
 <html lang="en">
 <head>
 <meta charset="utf-8"/>
-<meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>Srijana Shrestha | Academic Portfolio</title>
-<meta name="description" content="Academic portfolio of Srijana Shrestha, PhD Candidate in Electrical & Computer Engineering at the University of Oklahoma specializing in power systems, electrical machines, and grid modernization."/>
+<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+<title>Srijana Shrestha - Homepage</title>
+<meta name="description" content="Academic homepage and personal portfolio of Srijana Shrestha, PhD Candidate in Electrical &amp; Computer Engineering at University of Oklahoma."/>
+<meta property="og:site_name" content="Srijana Shrestha"/>
+<meta property="og:title" content="Srijana Shrestha - Homepage"/>
+<meta property="og:description" content="Academic homepage and personal portfolio of Srijana Shrestha, PhD Candidate in Electrical &amp; Computer Engineering at University of Oklahoma."/>
+<meta property="og:type" content="website"/>
+
+<!-- Icons & Stylesheets -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" crossorigin="anonymous" referrerpolicy="no-referrer"/>
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/jpswalsh/academicons@1/css/academicons.min.css"/>
 <link rel="stylesheet" href="/style.css"/>
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+<!-- Early Theme Init Script to Prevent FOUC -->
 <script>
   (function() {
     try {
@@ -24,537 +31,310 @@
 
 <div id="top"></div>
 
-<header class="site" id="site-header">
-  <div class="container">
-    <div class="nav" id="main-nav">
-      <a class="brand" href="#top" id="brand-link">
-        <span>⚡</span> Srijana Shrestha
-      </a>
-      <div class="nav-actions" id="nav-actions">
-        <nav class="menu" id="menu-nav">
-          <a href="#top" class="active" id="nav-home">Home</a>
-          <a href="#about" id="nav-about">About</a>
-          <a href="#experience" id="nav-exp">Experience</a>
-          <a href="#skills" id="nav-skills">Skills</a>
-          <a href="#projects" id="nav-proj">Projects</a>
-          <a href="#publications" id="nav-pub">Publications</a>
-          <a href="#cv" id="nav-cv">CV</a>
-        </nav>
-        <button id="theme-toggle" class="theme-toggle-btn" type="button" aria-label="Toggle theme" title="Toggle dark / light theme">
-          <span class="light-icon" aria-hidden="true">☀️</span>
-          <span class="dark-icon" aria-hidden="true">🌙</span>
-        </button>
+<!-- MASTHEAD NAVIGATION -->
+<div class="masthead">
+  <div class="masthead__inner-wrap">
+    <a class="masthead__site-title" href="#about">Homepage</a>
+    <nav class="masthead__nav" id="site-nav">
+      <ul class="visible-links">
+        <li><a href="#about">About</a></li>
+        <li><a href="#publications">Publications</a></li>
+        <li><a href="#experience">Experience</a></li>
+        <li><a href="#education">Education</a></li>
+        <li><a href="#skills">Skills</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#teaching">Teaching</a></li>
+        <li><a href="/SrijanaShresthaResume.pdf" target="_blank" rel="noopener">CV</a></li>
+      </ul>
+      <div class="masthead__actions">
+        <button id="theme-toggle" class="theme-toggle-btn" aria-label="Toggle theme">🌙</button>
+      </div>
+    </nav>
+  </div>
+</div>
+
+<!-- MAIN TWO-COLUMN CONTAINER -->
+<div id="main" role="main">
+
+  <!-- LEFT STICKY SIDEBAR -->
+  <div class="sidebar sticky">
+    <div class="author__box" itemscope itemtype="http://schema.org/Person">
+      <div class="author__avatar">
+        <img src="/headshot.jpg" class="author__avatar" alt="Srijana Shrestha"/>
+      </div>
+      <div class="author__content">
+        <h3 class="author__name">Srijana Shrestha</h3>
+        <p class="author__bio">
+          PhD Candidate<br/>
+          <span style="font-size: 0.9em; color: var(--text-muted);">Electrical &amp; Computer Engineering</span><br/>
+          <span style="font-size: 0.9em; color: var(--text-muted);">University of Oklahoma</span>
+        </p>
+      </div>
+      <div class="author__urls-wrapper">
+        <ul class="author__urls social-icons">
+          <li><i class="fas fa-fw fa-university" aria-hidden="true"></i> University of Oklahoma</li>
+          <li><i class="fas fa-fw fa-map-marker-alt" aria-hidden="true"></i> Norman, OK, USA</li>
+          <li><a href="mailto:srijanashrestha524@gmail.com"><i class="fas fa-fw fa-envelope" aria-hidden="true"></i> srijanashrestha524@gmail.com</a></li>
+          <li><a href="mailto:srijanashrestha@ou.edu"><i class="fas fa-fw fa-envelope" aria-hidden="true"></i> srijanashrestha@ou.edu</a></li>
+          <li><a href="https://www.linkedin.com/in/shresthasrijana" target="_blank" rel="noopener"><i class="fab fa-fw fa-linkedin" aria-hidden="true"></i> LinkedIn / shresthasrijana</a></li>
+          <li><a href="https://github.com/srijanashresth" target="_blank" rel="noopener"><i class="fab fa-fw fa-github" aria-hidden="true"></i> GitHub / srijanashresth</a></li>
+          <li><a href="https://scholar.google.com/citations?user=QqQUsWMAAAAJ&amp;hl=en" target="_blank" rel="noopener"><i class="ai ai-fw ai-google-scholar" aria-hidden="true"></i> Google Scholar</a></li>
+          <li><a href="/SrijanaShresthaResume.pdf" target="_blank" rel="noopener"><i class="fas fa-fw fa-file-pdf" aria-hidden="true"></i> Curriculum Vitae (PDF)</a></li>
+        </ul>
+        <div class="author__urls_sm">
+          <a href="mailto:srijanashrestha524@gmail.com" title="Email"><i class="fas fa-fw fa-envelope" aria-hidden="true"></i></a>
+          <a href="https://www.linkedin.com/in/shresthasrijana" target="_blank" rel="noopener" title="LinkedIn"><i class="fab fa-fw fa-linkedin" aria-hidden="true"></i></a>
+          <a href="https://github.com/srijanashresth" target="_blank" rel="noopener" title="GitHub"><i class="fab fa-fw fa-github" aria-hidden="true"></i></a>
+          <a href="https://scholar.google.com/citations?user=QqQUsWMAAAAJ&amp;hl=en" target="_blank" rel="noopener" title="Google Scholar"><i class="ai ai-fw ai-google-scholar" aria-hidden="true"></i></a>
+          <a href="/SrijanaShresthaResume.pdf" target="_blank" rel="noopener" title="CV PDF"><i class="fas fa-fw fa-file-pdf" aria-hidden="true"></i></a>
+        </div>
       </div>
     </div>
   </div>
-</header>
 
-<div class="cover-banner" id="cover-banner">
-  <img src="/earth-banner.jpg" alt="Earth from orbit at night" id="cover-img"/>
-</div>
+  <!-- RIGHT MAIN ARTICLE CONTENT -->
+  <article class="page__content" itemscope itemtype="http://schema.org/CreativeWork">
 
-<main class="portfolio-layout" id="main-content">
-  <div class="container">
-    <div class="portfolio-grid">
+    <!-- ABOUT SECTION -->
+    <h1 id="about">👩‍💻 About</h1>
+    <p>
+      I’m a PhD candidate in Electrical and Computer Engineering at the <strong>University of Oklahoma</strong>, specializing in power systems, electrical machines, and energy technologies. My research focuses on the aging of electrical machines operating under dynamic operating conditions imposed by grid flexibility provision and how they impact the lifetime of electric motors. I explore control and data-driven techniques to solve pressing challenges in grid modernization.
+    </p>
+    <p>
+      Prior to my doctoral studies, I served for several years as an Electrical Engineer with <strong>Renewable Energy for Rural Livelihood (Nepal Government / UNDP Nepal)</strong>, spearheading solar mini-grid projects, emergency technical rehabilitation, and formulating national standard feasibility guidelines.
+    </p>
+    <p>
+      <strong>Interests</strong>: Power systems modeling, electrical machine aging &amp; thermal dynamics, grid flexibility, energy storage systems (BESS), power electronics, PLC &amp; LabVIEW automation, signal processing, supervised machine learning.
+    </p>
+    <blockquote>
+      <p>📢 <strong>Opportunities:</strong> I am actively seeking research and engineering opportunities in Power Systems, Grid Modernization, Energy Storage, and Dynamic Machine Modeling.</p>
+    </blockquote>
 
-      <!-- LEFT SIDEBAR -->
-      <aside class="sidebar-col" id="sidebar-col">
-        <div class="profile-card" id="profile-card">
-          <div class="headshot-wrap" id="headshot-wrap">
-            <img src="/headshot.jpg" alt="Srijana Shrestha Headshot" id="profile-avatar"/>
-          </div>
-          <h1 class="profile-name" id="author-name">Srijana Shrestha</h1>
-          <div class="profile-title" id="author-title">
-            <strong>PhD Candidate</strong><br/>
-            Electrical and Computer Engineering<br/>
-            University of Oklahoma<br/>
-            <span style="color:var(--muted);">Norman, OK</span>
-          </div>
-          <div class="profile-badges" id="quick-links">
-            <a class="badge badge-primary" href="#cv" id="badge-cv">📄 View CV</a>
-            <a class="badge" href="https://scholar.google.com/citations?user=QqQUsWMAAAAJ&amp;hl=en" target="_blank" rel="noopener" id="badge-scholar">🎓 Scholar</a>
-            <a class="badge" href="https://www.linkedin.com/in/shresthasrijana" target="_blank" rel="noopener" id="badge-linkedin">💼 LinkedIn</a>
-            <a class="badge" href="https://github.com/srijanashresth" target="_blank" rel="noopener" id="badge-github">💻 GitHub</a>
-          </div>
-        </div>
+    <!-- PUBLICATIONS SECTION -->
+    <h1 id="publications">📝 Publications</h1>
+    <p>
+      Peer-reviewed research articles and conference proceedings. For citations and metrics, view my
+      <a href="https://scholar.google.com/citations?user=QqQUsWMAAAAJ&amp;hl=en" target="_blank" rel="noopener">
+        <i class="ai ai-google-scholar"></i> Google Scholar Profile
+      </a>.
+    </p>
+    <ul class="publications-list">
+      <li>
+        <p>
+          <u>S. Shrestha</u>, P. Moses, and J. Cai,
+          “<strong>Application of a Squirrel Cage Induction Machine as a Dynamometer for Motor Heat-run Tests</strong>,”
+          In <em>Proceedings of the 2024 IEEE ANDESCON</em>, Cusco, Peru, 2024, pp. 1–6.<br/>
+          <span class="pub-links">
+            [<a href="https://doi.org/10.1109/ANDESCON61840.2024.10755786" target="_blank" rel="noopener">Paper (DOI)</a>]
+            [<a href="https://scholar.google.com/citations?user=QqQUsWMAAAAJ&amp;hl=en" target="_blank" rel="noopener">Scholar</a>]
+          </span>
+        </p>
+      </li>
+      <li>
+        <p>
+          <u>S. Shrestha</u>, V. Panchalogaranjan, and P. Moses,
+          “<strong>The February 2021 U.S. Southwest power crisis</strong>,”
+          <em>Electric Power Systems Research</em>, 2023.<br/>
+          <span class="pub-links">
+            [<a href="https://doi.org/10.1016/j.epsr.2023.109124" target="_blank" rel="noopener">Paper (DOI)</a>]
+            [<a href="https://scholar.google.com/citations?user=QqQUsWMAAAAJ&amp;hl=en" target="_blank" rel="noopener">Scholar</a>]
+          </span>
+        </p>
+      </li>
+      <li>
+        <p>
+          <u>S. Shrestha</u>, M. KC, and I. Tamrakar,
+          “<strong>Modeling and Analysis of Solid State Transformer</strong>,”
+          In <em>Proceedings of IOE Graduate Conference</em>, 2019-Summer.<br/>
+          <span class="pub-links">
+            [<a href="https://scholar.google.com/citations?user=QqQUsWMAAAAJ&amp;hl=en" target="_blank" rel="noopener">Scholar</a>]
+          </span>
+        </p>
+      </li>
+    </ul>
 
-        <!-- Get in Touch -->
-        <div class="sidebar-card" id="contact-card">
-          <div class="sidebar-card-title">📫 Get in Touch</div>
-          <table class="property-table" id="contact-table">
-            <tbody>
-              <tr>
-                <td class="icon-col">✉️</td>
-                <td class="value-col">
-                  <a href="mailto:srijanashrestha524@gmail.com" id="link-email-personal">srijanashrestha524@gmail.com</a>
-                </td>
-              </tr>
-              <tr>
-                <td class="icon-col">✉️</td>
-                <td class="value-col">
-                  <a href="mailto:srijanashrestha@ou.edu" id="link-email-edu">srijanashrestha@ou.edu</a>
-                </td>
-              </tr>
-            </tbody>
-          </table>
-        </div>
+    <!-- EXPERIENCE SECTION -->
+    <h1 id="experience">🧳 Experience</h1>
+    <ul class="academic-list">
+      <li>
+        <strong class="job-title">Graduate Research Assistant</strong> @ <strong>University of Oklahoma</strong>, <em>Norman, OK, USA</em> (Aug 2021 — Present)
+        <ul class="sub-list">
+          <li>Implemented a cost-effective motor dynamometer setup using an induction machine that utilizes dynamic braking techniques, achieving precise and controlled loading for experiments with control accuracy &gt;95%.</li>
+          <li>Built a fully automated laboratory testbed for insulation aging research by successfully integrating Siemens PLCs (for control) and NI LabVIEW (for control data acquisition).</li>
+          <li>Developed an electromechanical model (accuracy &gt;95%) of an induction machine in MATLAB/Simscape to quantify aging impact of speed modulation on stator winding.</li>
+          <li>Conducted a comparative analysis of the Oklahoma and Texas power grids to identify key vulnerabilities under severe weather conditions.</li>
+        </ul>
+      </li>
+      <li>
+        <strong class="job-title">Graduate Teaching Assistant</strong> @ <strong>University of Oklahoma</strong>, <em>Norman, OK, USA</em> (Aug 2022 — May 2023)
+        <ul class="sub-list">
+          <li>Graded assignments and provided academic guidance for undergraduate students in Introduction to Solid State Electronic Devices.</li>
+        </ul>
+      </li>
+      <li>
+        <strong class="job-title">Electrical Engineer</strong> @ <strong>Renewable Energy for Rural Livelihood (Nepal Government / UNDP Nepal)</strong>, <em>Kathmandu, Nepal</em> (Jun 2018 — Jul 2021)
+        <ul class="sub-list">
+          <li>Led end-to-end rehabilitation of a lightning-damaged solar project, from identifying root cause and engineered solution to equipment procurement and final installation.</li>
+          <li>Provided technical expertise to the Alternative Energy Promotion Center (AEPC) in the development of the national standard "Guidelines for Feasibility Study of Solar Mini-grid Projects".</li>
+          <li>Designed and supported the implementation of 12 solar photovoltaic projects, including 10 utility mini-grids and 2 water pumping systems.</li>
+          <li>Served as a technical advisor for 8 municipalities in preparing their 5-year strategic energy plans to improve clean energy access in rural communities; provided insights on the World Bank’s Multi-tiered Framework (MTF) regarding energy access in Nepal.</li>
+          <li>Authored two strategic concept notes on "Smart Grids for Isolated Solar Mini-Grids" and "Lightning Protection System Design Guidelines" to address emerging challenges in Nepal's energy infrastructure.</li>
+        </ul>
+      </li>
+    </ul>
 
-        <!-- Education -->
-        <div class="sidebar-card" id="education-card">
-          <div class="sidebar-card-title">🎓 Education</div>
-          <div class="edu-item" id="edu-phd">
-            <div class="edu-school">University of Oklahoma</div>
-            <div class="edu-degree">PhD in Electrical Engineering</div>
-            <div class="edu-meta">2021 – 2026 (expected) · Norman, OK, USA</div>
-          </div>
-          <div class="edu-item" id="edu-msc">
-            <div class="edu-school">University of Oklahoma</div>
-            <div class="edu-degree">MSc in Electrical &amp; Computer Engineering</div>
-            <div class="edu-meta">2021 – 2024 · Norman, OK, USA</div>
-          </div>
-          <div class="edu-item" id="edu-bachelors">
-            <div class="edu-school">Tribhuvan University</div>
-            <div class="edu-degree">Bachelor’s in Electrical Engineering</div>
-            <div class="edu-meta">2013 – 2017 · Kathmandu, Nepal</div>
-          </div>
-        </div>
+    <!-- EDUCATION SECTION -->
+    <h1 id="education">🎓 Education</h1>
+    <ul class="academic-list">
+      <li>
+        <strong class="job-title">PhD in Electrical Engineering</strong> @ <strong>University of Oklahoma</strong>, <em>Norman, OK, USA</em> (2021 — 2026 expected)
+      </li>
+      <li>
+        <strong class="job-title">MSc in Electrical &amp; Computer Engineering</strong> @ <strong>University of Oklahoma</strong>, <em>Norman, OK, USA</em> (2021 — 2024)
+      </li>
+      <li>
+        <strong class="job-title">Bachelor’s in Electrical Engineering</strong> @ <strong>Tribhuvan University</strong>, <em>Kathmandu, Nepal</em> (2013 — 2017)
+      </li>
+    </ul>
 
-        <!-- Research Interests -->
-        <div class="sidebar-card" id="interests-card">
-          <div class="sidebar-card-title">🔬 Research Interests</div>
-          <div class="tags-wrap" id="interests-tags">
-            <span class="tag tag-blue">Power Systems</span>
-            <span class="tag tag-purple">Electrical Machines</span>
-            <span class="tag tag-green">Power Systems Modeling</span>
-            <span class="tag tag-orange">Energy Storage</span>
-            <span class="tag tag-red">Insulation Aging</span>
-            <span class="tag tag-yellow">Signal Processing</span>
-          </div>
-        </div>
-
-        <!-- Hobbies -->
-        <div class="sidebar-card" id="hobbies-card">
-          <div class="sidebar-card-title">🏓 Hobbies &amp; Leisure</div>
-          <ul class="hobby-list" id="hobby-list">
-            <li><span>🏓</span> <span><strong>Table Tennis</strong></span></li>
-            <li><span>🏸</span> <span><strong>Badminton</strong></span></li>
-            <li><span>📖</span> <span><strong>Reading fiction &amp; nonfiction</strong><br/><small style="color:var(--muted);">(currently reading <em>Starry Messenger</em> by Neil deGrasse Tyson)</small></span></li>
-          </ul>
-        </div>
-
-        <!-- Courses -->
-        <div class="sidebar-card" id="courses-card">
-          <div class="sidebar-card-title">📚 Courses</div>
-          <div class="course-group" id="courses-ee">
-            <div class="course-label">Electrical &amp; Electronics</div>
-            <div class="course-tags">
-              <span class="tag tag-gray">Power System Protection</span>
-              <span class="tag tag-gray">Control Theory</span>
-              <span class="tag tag-gray">Digital Signal Processing</span>
-              <span class="tag tag-gray">Linear Systems Analysis</span>
-              <span class="tag tag-gray">Power Quality &amp; EMI</span>
-              <span class="tag tag-gray">Measurement &amp; Automation</span>
-            </div>
-          </div>
-          <div class="course-group" id="courses-electives">
-            <div class="course-label">Electives</div>
-            <div class="course-tags">
-              <span class="tag tag-gray">Convex Optimization</span>
-              <span class="tag tag-gray">Advanced Applied Statistics</span>
-              <span class="tag tag-gray">Energy Analytics</span>
-            </div>
-          </div>
-        </div>
-
-      </aside>
-
-      <!-- RIGHT MAIN CONTENT -->
-      <section class="main-col" id="main-sections">
-
-        <!-- About Me -->
-        <div class="section-block" id="about">
-          <div class="notion-callout" id="about-callout">
-            <span class="notion-callout-icon">👤</span>
-            <h2 class="notion-callout-title">About Me</h2>
-          </div>
-          <div class="card" id="about-card">
-            <p style="font-size: 1.05rem; line-height: 1.7; margin-top: 0;">
-              I am a PhD candidate in Electrical and Computer Engineering at the University of Oklahoma, specializing in power systems and energy technologies. My research focuses on the aging of electrical machines operating under dynamic operating conditions imposed by grid flexibility provision and how they impact the lifetime of electric motors. I am interested in exploring control and data-driven techniques to solve challenges related to grid modernization.
-            </p>
-            <p style="margin-bottom: 0; color: var(--text-secondary);">
-              Prior to my doctoral studies, I served for several years as an Electrical Engineer with Renewable Energy for Rural Livelihood (Nepal Government / UNDP Nepal), spearheading solar mini-grid projects, emergency technical rehabilitation, and formulating national standard feasibility guidelines.
-            </p>
-          </div>
-        </div>
-
-        <!-- Experience -->
-        <div class="section-block" id="experience">
-          <div class="notion-callout" id="experience-callout">
-            <span class="notion-callout-icon">💼</span>
-            <h2 class="notion-callout-title">Experience</h2>
-          </div>
-
-          <!-- University of Oklahoma -->
-          <div class="card exp-org" id="exp-ou">
-            <div class="exp-org-header">
-              <h3 class="exp-org-name">University of Oklahoma</h3>
-              <div class="exp-org-loc">Norman, OK, USA</div>
-            </div>
-
-            <!-- GRA -->
-            <div class="exp-role" id="exp-ou-gra">
-              <div class="exp-role-header">
-                <span class="exp-role-title">Graduate Research Assistant</span>
-                <span class="exp-role-date">August 2021 – Present</span>
-              </div>
-              <ul class="exp-list">
-                <li>Implemented a cost-effective motor dynamometer setup using an induction machine that utilizes dynamic braking techniques, achieving precise and controlled loading for experiments with control accuracy &gt;95%.</li>
-                <li>Built a fully automated laboratory testbed for insulation aging research by successfully integrating Siemens PLCs (for control) and NI LabVIEW (for control data acquisition).</li>
-                <li>Developed an electromechanical model (accuracy &gt;95%) of an induction machine in MATLAB/Simscape to quantify aging impact of speed modulation on stator winding.</li>
-                <li>Conducted a comparative analysis of the Oklahoma and Texas power grids to identify key vulnerabilities under severe weather conditions.</li>
-              </ul>
-            </div>
-
-            <!-- GTA -->
-            <div class="exp-role" id="exp-ou-gta">
-              <div class="exp-role-header">
-                <span class="exp-role-title">Graduate Teaching Assistant</span>
-                <span class="exp-role-date">August 2022 – May 2023</span>
-              </div>
-              <ul class="exp-list">
-                <li>Graded assignments and provided feedback for undergraduate students in Introduction to Solid State Electronic Devices.</li>
-              </ul>
-            </div>
-          </div>
-
-          <!-- Renewable Energy for Rural Livelihood -->
-          <div class="card exp-org" id="exp-rerl">
-            <div class="exp-org-header">
-              <h3 class="exp-org-name">Renewable Energy for Rural Livelihood</h3>
-              <div class="exp-org-loc">Nepal Government and UNDP Nepal · Kathmandu, Nepal</div>
-            </div>
-
-            <div class="exp-role" id="exp-rerl-ee">
-              <div class="exp-role-header">
-                <span class="exp-role-title">Electrical Engineer</span>
-                <span class="exp-role-date">June 2018 – July 2021</span>
-              </div>
-              <ul class="exp-list">
-                <li>Led end-to-end rehabilitation of a lightning-damaged solar project, from identifying root cause and engineered solution to equipment procurement and final installation.</li>
-                <li>Provided technical expertise to the Alternative Energy Promotion Center (AEPC) in the development of the national standard "Guidelines for Feasibility Study of Solar Mini-grid Projects".</li>
-                <li>Designed and supported the implementation of 12 solar photovoltaic projects, including 10 utility mini-grids and 2 water pumping systems.</li>
-                <li>Served as a technical advisor for 8 municipalities in preparing their 5-year strategic energy plans to improve clean energy access in rural communities; provided insights on the World Bank’s Multi-tiered Framework (MTF) regarding energy access in Nepal.</li>
-                <li>Authored two strategic concept notes on "Smart Grids for Isolated Solar Mini-Grids" and "Lightning Protection System Design Guidelines" to address emerging challenges in Nepal's energy infrastructure.</li>
-              </ul>
-            </div>
-          </div>
-        </div>
-
-        <!-- Skills -->
-        <div class="section-block" id="skills">
-          <div class="notion-callout" id="skills-callout">
-            <span class="notion-callout-icon">🛠️</span>
-            <h2 class="notion-callout-title">Skills</h2>
-          </div>
-
-          <table class="skills-table" id="skills-table">
-            <thead>
-              <tr>
-                <th style="width: 32%;">Domain</th>
-                <th>Technologies &amp; Tools</th>
-              </tr>
-            </thead>
-            <tbody>
-              <tr>
-                <td>
-                  <span class="skill-cat-name">🔧 Modeling Tools</span>
-                </td>
-                <td>
-                  <div class="tags-wrap">
-                    <span class="tag tag-blue">MATLAB/Simulink</span>
-                    <span class="tag tag-blue">MATLAB/Simscape</span>
-                    <span class="tag tag-blue">ETAP</span>
-                    <span class="tag tag-blue">EMTP‑RV</span>
-                    <span class="tag tag-blue">pandapower</span>
-                  </div>
-                </td>
-              </tr>
-              <tr>
-                <td>
-                  <span class="skill-cat-name">⚙️ Control &amp; Automation</span>
-                </td>
-                <td>
-                  <div class="tags-wrap">
-                    <span class="tag tag-purple">NI LabVIEW</span>
-                    <span class="tag tag-purple">NI hardware</span>
-                    <span class="tag tag-purple">PLC Programming (Siemens TIA Portal, S7‑1200)</span>
-                    <span class="tag tag-purple">Ladder Logic</span>
-                    <span class="tag tag-purple">Functional Block Diagram</span>
-                  </div>
-                </td>
-              </tr>
-              <tr>
-                <td>
-                  <span class="skill-cat-name">📈 Data Acquisition</span>
-                </td>
-                <td>
-                  <div class="tags-wrap">
-                    <span class="tag tag-green">NI DAQmx</span>
-                  </div>
-                </td>
-              </tr>
-              <tr>
-                <td>
-                  <span class="skill-cat-name">💻 Programming &amp; Data</span>
-                </td>
-                <td>
-                  <div class="tags-wrap">
-                    <span class="tag tag-orange">Python</span>
-                    <span class="tag tag-orange">R</span>
-                    <span class="tag tag-orange">MATLAB</span>
-                    <span class="tag tag-orange">Statistical Regression</span>
-                    <span class="tag tag-orange">Machine Learning</span>
-                  </div>
-                </td>
-              </tr>
-              <tr>
-                <td>
-                  <span class="skill-cat-name">📶 Networking</span>
-                </td>
-                <td>
-                  <div class="tags-wrap">
-                    <span class="tag tag-yellow">Modbus TCP</span>
-                    <span class="tag tag-yellow">TCP/IP</span>
-                    <span class="tag tag-yellow">Industrial Ethernet</span>
-                  </div>
-                </td>
-              </tr>
-            </tbody>
-          </table>
-        </div>
-
-        <!-- Projects -->
-        <div class="section-block" id="projects">
-          <div class="notion-callout" id="projects-callout">
-            <span class="notion-callout-icon">📁</span>
-            <h2 class="notion-callout-title">Projects</h2>
-          </div>
-
-          <div class="projects-container" id="projects-list">
-
-            <!-- Project 1 -->
-            <div class="project-item" id="project-labview">
-              <h3 class="project-title">💻 LabVIEW‑based Power Measurement System</h3>
-              <p class="project-desc">
-                Developed a custom LabVIEW application to perform real-time acquisition, processing, and data logging of real, reactive, and apparent power for a Variable Frequency Drive (VFD) fed induction machine. Ensured accuracy and reliability by implementing measurement methodologies in strict compliance with relevant IEEE standards, creating a validated tool for experimental thermal and electrical analysis.
-              </p>
-              <div class="project-tags">
-                <span class="tag tag-purple">Data Acquisition (DAQ)</span>
-                <span class="tag tag-blue">IEEE Standards</span>
-                <span class="tag tag-purple">LabVIEW Programming</span>
-                <span class="tag tag-orange">Power Measurement</span>
-                <span class="tag tag-green">VFDs</span>
-              </div>
-            </div>
-
-            <!-- Project 2 -->
-            <div class="project-item" id="project-temp-control">
-              <h3 class="project-title">🌡️ Temperature Control and Automation</h3>
-              <p class="project-desc">
-                Designed a closed-loop automation system using a PLC and Ladder Logic for a temperature-controlled environment. Used cost-effective sensors and implemented safety features, real-time monitoring, and data logging using Click PLC and LED-based heater/fan indicators. Integrated a cost-effective hardware simulation by modeling an expensive thermal sensor with a potentiometer.
-              </p>
-              <div class="project-tags">
-                <span class="tag tag-blue">Control Systems</span>
-                <span class="tag tag-green">Data Logging</span>
-                <span class="tag tag-yellow">Lab Simulation</span>
-                <span class="tag tag-purple">Ladder Logic</span>
-                <span class="tag tag-orange">PLC (Click)</span>
-              </div>
-            </div>
-
-            <!-- Project 3 -->
-            <div class="project-item" id="project-ml-temp">
-              <h3 class="project-title">🤖 Data Driven Temperature Estimation Techniques Using Supervised Machine Learning</h3>
-              <p class="project-desc">
-                Investigated the feasibility of linear regression models for real-time temperature estimation in a Permanent Magnet Synchronous Machine (PMSM) to prevent overheating and failure. Implemented and evaluated regression models (Ordinary Least Squares, Ridge, and Lasso) in Python (Scikit-learn library) by standardizing and preprocessing a large-scale dataset (300 MB) of motor operational parameters. Demonstrated that linear models were insufficient (achieving a max R² value of 0.29 for the multivariable model), proving that motor thermal dynamics are dominated by complex non-linear relationships and motivating the need for autoregressive or recurrent structures.
-              </p>
-              <div class="project-tags">
-                <span class="tag tag-gray">Data Preprocessing</span>
-                <span class="tag tag-pink">Linear Regression</span>
-                <span class="tag tag-blue">Python</span>
-                <span class="tag tag-orange">Scikit-learn</span>
-                <span class="tag tag-blue">Supervised Machine Learning</span>
-              </div>
-            </div>
-
-            <!-- Project 4 -->
-            <div class="project-item" id="project-bess">
-              <h3 class="project-title">🔋 Optimal Placement and Sizing of Battery Energy Storage System (BESS)</h3>
-              <p class="project-desc">
-                Implemented a two-step approach using the Particle Swarm Optimization (PSO) algorithm in Python (pandapower library) for the optimal placement and sizing of a Battery Energy Storage System (BESS) in an electrical network. Demonstrated that optimum BESS placement on IEEE 14-bus and 30-bus test systems significantly reduced power losses by 7.5%, confirming that siting BESS at high-load buses maximizes grid efficiency through localized power support.
-              </p>
-              <div class="project-tags">
-                <span class="tag tag-yellow">Particle Swarm Optimization (PSO)</span>
-                <span class="tag tag-green">Power Flow Analysis</span>
-                <span class="tag tag-blue">Python</span>
-                <span class="tag tag-purple">pandapower</span>
-              </div>
-            </div>
-
-            <!-- Project 5 -->
-            <div class="project-item" id="project-ercot-demand">
-              <h3 class="project-title">📊 Analyzing and Forecasting Electricity Demand</h3>
-              <p class="project-desc">
-                Analyzed ERCOT electricity demand data (2016–2021) by conducting time series decomposition to identify underlying trends, seasonality, and correlations with external factors (temperature, GDP). Developed a monthly forecasting model (seasonal ARIMA(0,1,2)(0,1,1)[12]) achieving a high-accuracy MAPE of &lt;5% to support long-term operational planning. Additionally implemented a daily forecasting model using dynamic regression to capture non-linear weather and day-of-week patterns.
-              </p>
-              <div class="project-tags">
-                <span class="tag tag-yellow">Particle Swarm Optimization (PSO)</span>
-                <span class="tag tag-orange">R Programming</span>
-                <span class="tag tag-pink">Time Series Analysis</span>
-              </div>
-            </div>
-
-            <!-- Project 6 -->
-            <div class="project-item" id="project-sst">
-              <h3 class="project-title">⚡ Solid State Transformer</h3>
-              <p class="project-desc">
-                Undergraduate capstone project: Designed and simulated a multi-stage, high-frequency Solid State Transformer (SST) in MATLAB/Simulink to provide active voltage regulation, reactive power compensation, and harmonic suppression for modern distribution grids. Implemented hysteresis band current control, sinusoidal PWM (SPWM), and an LCL filter, achieving a power factor of 0.99, harmonic distortion &lt;5%, and efficiency &gt;95%.
-              </p>
-              <div class="project-tags">
-                <span class="tag tag-blue">Control Systems</span>
-                <span class="tag tag-purple">Harmonic Analysis</span>
-                <span class="tag tag-orange">MATLAB</span>
-                <span class="tag tag-yellow">Power Electronics</span>
-                <span class="tag tag-pink">Pulse-width Modulation (PWM)</span>
-                <span class="tag tag-blue">Simulink</span>
-              </div>
-            </div>
-
-          </div>
-        </div>
-
-        <!-- Publications -->
-        <div class="section-block" id="publications">
-          <div class="notion-callout" id="pub-callout">
-            <span class="notion-callout-icon">📚</span>
-            <h2 class="notion-callout-title">Publications</h2>
-          </div>
-
-          <div class="card" id="pub-card" style="margin-bottom: 1.25rem;">
-            <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 1rem; flex-wrap: wrap; gap: 0.5rem;">
-              <span style="font-weight: 600; color: #111;">Peer-Reviewed Articles &amp; Proceedings</span>
-              <a class="badge" href="https://scholar.google.com/citations?user=QqQUsWMAAAAJ&amp;hl=en" target="_blank" rel="noopener" id="scholar-profile-link">
-                🎓 View Google Scholar Citations
-              </a>
-            </div>
-
-            <h4 style="margin: 0.5rem 0 0.75rem; color: var(--primary); font-size: 0.95rem; text-transform: uppercase; letter-spacing: 0.04em;">Conferences</h4>
-
-            <div class="pub-item" id="pub-andescon">
-              <div class="pub-title">Application of a Squirrel Cage Induction Machine as a Dynamometer for Motor Heat‑run Tests</div>
-              <div class="pub-authors">S. Shrestha, P. Moses, and J. Cai</div>
-              <div class="pub-venue">2024 IEEE ANDESCON, Cusco, Peru, 2024, pp. 1‑6</div>
-              <div class="pub-links">
-                <a class="badge" href="https://doi.org/10.1109/ANDESCON61840.2024.10755786" target="_blank" rel="noopener">DOI: 10.1109/ANDESCON61840.2024.10755786</a>
-              </div>
-            </div>
-
-            <div class="pub-item" id="pub-ioe" style="margin-top: 0.75rem;">
-              <div class="pub-title">Modeling and Analysis of Solid State Transformer</div>
-              <div class="pub-authors">S. Shrestha, M. KC, and I. Tamrakar</div>
-              <div class="pub-venue">In Proceedings of IOE Graduate Conference, 2019‑Summer</div>
-              <div class="pub-links">
-                <a class="badge" href="https://scholar.google.com/citations?user=QqQUsWMAAAAJ&amp;hl=en" target="_blank" rel="noopener">🎓 View on Scholar</a>
-              </div>
-            </div>
-
-            <h4 style="margin: 1.5rem 0 0.75rem; color: var(--primary); font-size: 0.95rem; text-transform: uppercase; letter-spacing: 0.04em;">Journals</h4>
-
-            <div class="pub-item" id="pub-epsr">
-              <div class="pub-title">The February 2021 U.S. Southwest power crisis</div>
-              <div class="pub-authors">S. Shrestha, V. Panchalogaranjan, and P. Moses</div>
-              <div class="pub-venue">Electric Power Systems Research, 2023</div>
-              <div class="pub-links">
-                <a class="badge" href="https://doi.org/10.1016/j.epsr.2023.109124" target="_blank" rel="noopener">DOI: 10.1016/j.epsr.2023.109124</a>
-                <a class="badge" href="https://scholar.google.com/citations?user=QqQUsWMAAAAJ&amp;hl=en" target="_blank" rel="noopener">🎓 View on Scholar</a>
-              </div>
-            </div>
-          </div>
-        </div>
-
-        <!-- Curriculum Vitae Section -->
-        <div class="section-block" id="cv">
-          <div class="notion-callout" id="cv-callout">
-            <span class="notion-callout-icon">📄</span>
-            <h2 class="notion-callout-title">Curriculum Vitae</h2>
-          </div>
-
-          <div class="card" id="cv-card">
-            <div style="display: flex; justify-content: space-between; align-items: flex-start; margin-bottom: 1.25rem; flex-wrap: wrap; gap: 0.75rem;">
-              <div>
-                <h3 style="margin: 0 0 0.25rem; font-size: 1.15rem; color: var(--text-primary);">Curriculum Vitae (PDF)</h3>
-                <p style="margin: 0; color: var(--text-secondary); font-size: 0.9rem;">
-                  Comprehensive academic curriculum vitae stored locally in this portfolio repository (<code>SrijanaShresthaResume.pdf</code>).
-                </p>
-              </div>
-              <div style="display: flex; gap: 0.5rem; flex-wrap: wrap;">
-                <a class="badge badge-primary" href="/SrijanaShresthaResume.pdf" download="SrijanaShresthaResume.pdf" id="download-cv-btn">
-                  📥 Download PDF
-                </a>
-                <a class="badge" href="/SrijanaShresthaResume.pdf" target="_blank" rel="noopener" id="open-cv-btn">
-                  ↗ Open in New Tab
-                </a>
-              </div>
-            </div>
-
-            <!-- PDF Viewer with fallback -->
-            <div style="background: var(--pdf-viewer-bg); border: 1px solid var(--border); border-radius: var(--radius-sm); padding: 0.5rem;">
-              <iframe src="/SrijanaShresthaResume.pdf" title="Srijana Shrestha CV Document" style="width: 100%; height: 750px; border: none; border-radius: 4px; display: block;">
-                <p style="padding: 1.5rem; text-align: center; margin: 0; font-size: 0.95rem;">
-                  Your browser does not support inline PDF viewing.
-                  <a href="/SrijanaShresthaResume.pdf" target="_blank" style="font-weight: 600; margin-left: 0.35rem;">Click here to open or download the PDF</a>.
-                </p>
-              </iframe>
-            </div>
-          </div>
-        </div>
-
-      </section>
-
+    <!-- SKILLS SECTION -->
+    <h1 id="skills">⚡ Skills &amp; Tools</h1>
+    <div class="skills-block">
+      <div class="skill-category">
+        <strong>🔧 Modeling &amp; Simulation:</strong>
+        <span>MATLAB/Simulink, MATLAB/Simscape, ETAP, EMTP‑RV, pandapower</span>
+      </div>
+      <div class="skill-category">
+        <strong>⚙️ Control &amp; Automation:</strong>
+        <span>NI LabVIEW, NI hardware, PLC Programming (Siemens TIA Portal, S7‑1200, Click PLC), Ladder Logic, Functional Block Diagram</span>
+      </div>
+      <div class="skill-category">
+        <strong>📈 Data Acquisition (DAQ):</strong>
+        <span>NI DAQmx, sensor signal conditioning, automated dynamometer testbeds</span>
+      </div>
+      <div class="skill-category">
+        <strong>💻 Programming &amp; Analytics:</strong>
+        <span>Python, R, MATLAB, Statistical Regression, Supervised Machine Learning</span>
+      </div>
+      <div class="skill-category">
+        <strong>📶 Protocols &amp; Industrial Networks:</strong>
+        <span>Modbus TCP, TCP/IP, Industrial Ethernet</span>
+      </div>
     </div>
-  </div>
-</main>
+
+    <!-- PROJECTS SECTION -->
+    <h1 id="projects">🚀 Selected Projects</h1>
+    <ul class="projects-academic-list">
+      <li>
+        <div class="project-item-title">💻 LabVIEW‑based Power Measurement System</div>
+        <div class="project-item-desc">
+          Developed a custom LabVIEW application to perform real-time acquisition, processing, and data logging of real, reactive, and apparent power for a Variable Frequency Drive (VFD) fed induction machine. Ensured measurement accuracy and reliability in strict compliance with relevant IEEE standards for experimental thermal and electrical analysis.
+        </div>
+        <div class="project-meta-tags">
+          <em>Keywords:</em> Data Acquisition (DAQ) · IEEE Standards · LabVIEW Programming · Power Measurement · VFDs
+        </div>
+      </li>
+      <li>
+        <div class="project-item-title">🌡️ Temperature Control and Automation</div>
+        <div class="project-item-desc">
+          Designed a closed-loop automation system using a PLC and Ladder Logic for a temperature-controlled environment. Used cost-effective sensors and implemented safety features, real-time monitoring, and data logging using Click PLC and LED-based heater/fan indicators with potentiometer hardware simulation.
+        </div>
+        <div class="project-meta-tags">
+          <em>Keywords:</em> Control Systems · Data Logging · Lab Simulation · Ladder Logic · Click PLC
+        </div>
+      </li>
+      <li>
+        <div class="project-item-title">🤖 Data Driven Temperature Estimation Techniques Using Supervised ML</div>
+        <div class="project-item-desc">
+          Investigated the feasibility of linear regression models (OLS, Ridge, Lasso) in Python (Scikit-learn) for real-time temperature estimation in a Permanent Magnet Synchronous Machine (PMSM) using a 300 MB dataset of operational parameters to prevent overheating. Demonstrated the necessity of non-linear and recurrent structures for motor thermal dynamics.
+        </div>
+        <div class="project-meta-tags">
+          <em>Keywords:</em> Data Preprocessing · Linear Regression · Python · Scikit-learn · Supervised ML
+        </div>
+      </li>
+      <li>
+        <div class="project-item-title">🔋 Optimal Placement and Sizing of Battery Energy Storage System (BESS)</div>
+        <div class="project-item-desc">
+          Implemented a two-step approach using the Particle Swarm Optimization (PSO) algorithm in Python (pandapower) for optimal placement and sizing of a Battery Energy Storage System in an electrical network. Demonstrated that optimal BESS placement on IEEE 14-bus and 30-bus test systems reduced power losses by 7.5%.
+        </div>
+        <div class="project-meta-tags">
+          <em>Keywords:</em> Particle Swarm Optimization (PSO) · Power Flow Analysis · Python · pandapower
+        </div>
+      </li>
+      <li>
+        <div class="project-item-title">📊 Analyzing and Forecasting Electricity Demand (ERCOT)</div>
+        <div class="project-item-desc">
+          Analyzed ERCOT electricity demand data (2016–2021) using time series decomposition to identify underlying trends, seasonality, and temperature correlations. Developed a seasonal ARIMA(0,1,2)(0,1,1)[12] forecasting model achieving &lt;5% MAPE, alongside dynamic regression modeling.
+        </div>
+        <div class="project-meta-tags">
+          <em>Keywords:</em> Time Series Analysis · ARIMA · Dynamic Regression · R Programming
+        </div>
+      </li>
+      <li>
+        <div class="project-item-title">⚡ Solid State Transformer (SST)</div>
+        <div class="project-item-desc">
+          Designed and simulated a multi-stage high-frequency Solid State Transformer in MATLAB/Simulink for modern distribution grids. Implemented hysteresis band current control, sinusoidal PWM (SPWM), and an LCL filter, achieving a power factor of 0.99, THD &lt;5%, and efficiency &gt;95%.
+        </div>
+        <div class="project-meta-tags">
+          <em>Keywords:</em> Control Systems · Harmonic Analysis · MATLAB/Simulink · Power Electronics · SPWM
+        </div>
+      </li>
+    </ul>
+
+    <!-- TEACHING SECTION -->
+    <h1 id="teaching">💬 Teaching</h1>
+    <ul class="academic-list">
+      <li>
+        Graduate Teaching Assistant (GTA) @ <strong>University of Oklahoma</strong>:
+        <ul class="sub-list">
+          <li>ECE 3223: Introduction to Solid State Electronic Devices <em>(Fall 2022, Spring 2023)</em></li>
+        </ul>
+      </li>
+    </ul>
+
+  </article>
+
+</div>
 
 <!-- Floating Back to Top Button -->
 <a href="#top" class="back-to-top" id="back-to-top" aria-label="Back to top">
-  <span>↑</span> Back to Top
+  <i class="fas fa-arrow-up"></i> Top
 </a>
 
-<footer class="site" id="site-footer">
-  <div class="container">
-    &copy; <span id="copyright-year"></span> Srijana Shrestha · PhD Candidate, University of Oklahoma · Norman, OK
-  </div>
+<!-- ACADEMIC FOOTER -->
+<footer class="page__footer">
+  <footer>
+    <div class="page__footer-copyright">
+      &copy; <span id="copyright-year"></span> Srijana Shrestha · PhD Candidate, University of Oklahoma · Norman, OK
+    </div>
+    <div class="page__footer-follow">
+      <a href="https://scholar.google.com/citations?user=QqQUsWMAAAAJ&amp;hl=en" target="_blank" rel="noopener">Google Scholar</a> ·
+      <a href="https://www.linkedin.com/in/shresthasrijana" target="_blank" rel="noopener">LinkedIn</a> ·
+      <a href="https://github.com/srijanashresth" target="_blank" rel="noopener">GitHub</a>
+    </div>
+  </footer>
 </footer>
 
+<!-- Interactive Scripts -->
 <script>
-  // Dynamic copyright year
+  // Set current copyright year
   document.getElementById('copyright-year').textContent = new Date().getFullYear();
 
   // Dark / Light Theme Toggle
   const themeToggleBtn = document.getElementById('theme-toggle');
 
-  function updateToggleAria(theme) {
+  function updateToggleUI(theme) {
     if (themeToggleBtn) {
       const isDark = theme === 'dark';
+      themeToggleBtn.textContent = isDark ? '☀️' : '🌙';
       const label = isDark ? 'Switch to light mode' : 'Switch to dark mode';
       themeToggleBtn.setAttribute('aria-label', label);
       themeToggleBtn.setAttribute('title', label);
     }
   }
 
-  // Set initial aria attribute
   const currentTheme = document.documentElement.getAttribute('data-theme') || 'light';
-  updateToggleAria(currentTheme);
+  updateToggleUI(currentTheme);
 
   if (themeToggleBtn) {
     themeToggleBtn.addEventListener('click', () => {
@@ -564,27 +344,27 @@
       try {
         localStorage.setItem('theme', nextTheme);
       } catch (e) {}
-      updateToggleAria(nextTheme);
+      updateToggleUI(nextTheme);
     });
   }
 
-  // Follow OS preference if user hasn't chosen a theme explicitly
+  // OS preference sync
   if (window.matchMedia) {
     window.matchMedia('(prefers-color-scheme: dark)').addEventListener('change', (e) => {
       try {
         if (!localStorage.getItem('theme')) {
-          const systemTheme = e.matches ? 'dark' : 'light';
-          document.documentElement.setAttribute('data-theme', systemTheme);
-          updateToggleAria(systemTheme);
+          const sysTheme = e.matches ? 'dark' : 'light';
+          document.documentElement.setAttribute('data-theme', sysTheme);
+          updateToggleUI(sysTheme);
         }
       } catch (err) {}
     });
   }
 
-  // Floating Back to Top visibility
+  // Floating Back to Top Button
   const backToTopBtn = document.getElementById('back-to-top');
   window.addEventListener('scroll', () => {
-    if (window.pageYOffset > 350) {
+    if (window.pageYOffset > 300) {
       backToTopBtn.classList.add('visible');
     } else {
       backToTopBtn.classList.remove('visible');
@@ -592,26 +372,25 @@
   }, { passive: true });
 
   // Scrollspy: Highlight active nav link on scroll
-  const navLinks = document.querySelectorAll('.menu a');
+  const navLinks = document.querySelectorAll('.visible-links li a');
   const sections = [
-    { id: 'top', el: document.getElementById('top') },
     { id: 'about', el: document.getElementById('about') },
+    { id: 'publications', el: document.getElementById('publications') },
     { id: 'experience', el: document.getElementById('experience') },
+    { id: 'education', el: document.getElementById('education') },
     { id: 'skills', el: document.getElementById('skills') },
     { id: 'projects', el: document.getElementById('projects') },
-    { id: 'publications', el: document.getElementById('publications') },
-    { id: 'cv', el: document.getElementById('cv') }
+    { id: 'teaching', el: document.getElementById('teaching') }
   ];
 
   function updateActiveNav() {
-    const scrollPos = window.pageYOffset + 120;
-    let currentId = 'top';
+    const scrollPos = window.pageYOffset + 100;
+    let currentId = 'about';
 
     for (let i = sections.length - 1; i >= 0; i--) {
       const section = sections[i];
       if (section.el) {
-        const top = section.el.offsetTop;
-        if (scrollPos >= top) {
+        if (scrollPos >= section.el.offsetTop) {
           currentId = section.id;
           break;
         }
