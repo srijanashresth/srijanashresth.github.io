@@ -2,47 +2,21 @@
 <html lang="en">
 <head>
 <meta charset="utf-8"/>
-<meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>Personal Profile | Srijana Shrestha</title>
-<link rel="stylesheet" href="/style.css"/>
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+<meta http-equiv="refresh" content="0; url=/#about"/>
+<script>
+  (function() {
+    try {
+      var saved = localStorage.getItem('theme');
+      var prefersDark = window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches;
+      var theme = saved || (prefersDark ? 'dark' : 'light');
+      document.documentElement.setAttribute('data-theme', theme);
+    } catch(e){}
+    window.location.replace('/#about');
+  })();
+</script>
+<title>Profile | Srijana Shrestha</title>
 </head>
 <body>
-<header class="site"><div class="container"><div class="nav">
-    <a class="brand" href="/index.html">Srijana Shrestha</a>
-    <nav class="menu">
-      <a href="/index.html">Home</a>
-      <a href="/about.html">About</a>
-      <a href="/publications.html">Publications</a>
-      <a href="/resume.html">CV</a>
-    </nav>
-    </div></div></header>
-<main><div class="container">
-<section><h2>Personal Profile</h2><div class="content"><!-- wp:paragraph -->
-<p> I am a PhD candidate in Electrical and Computer Engineering at the University of Oklahoma. I earned my master's degree from the University of Oklahoma in 2024 and completed my undergraduate education at Tribhuvan University’s Institute of Engineering in Nepal.</p>
-<!-- /wp:paragraph -->
-
-<!-- wp:paragraph -->
-<p>Before starting my PhD, I worked for several years as an Electrical Engineer in my home country of Nepal. As an Electrical Engineer, I specialized in off-grid solar photovoltaic projects, including mini-grids for rural electrification and water pumping systems. My work has directly contributed to the development of national energy initiatives by providing technical expertise to policymakers.</p>
-<!-- /wp:paragraph -->
-
-<!-- wp:paragraph -->
-<p>Outside of my research, I enjoy badminton, table tennis, and cooking spicy food. I also like to relax with movies, books, music, and podcasts.</p>
-<!-- /wp:paragraph -->
-
-<!-- wp:paragraph -->
-<p>You can find my resume here <a href="https://srijanashrestha.oucreate.com/wp-content/uploads/2025/08/srijana.pdf" data-type="attachment" data-id="305">Resume</a></p>
-<!-- /wp:paragraph -->
-
-<!-- wp:paragraph -->
-<p>My publications are here <a href="https://srijanashrestha.oucreate.com/publication/" data-type="page" data-id="12">Publications</a></p>
-<!-- /wp:paragraph -->
-
-<!-- wp:paragraph -->
-<p>Background and interests are detailed here <a href="https://srijanashrestha.oucreate.com/" data-type="page" data-id="52">Srijana Shrestha</a></p>
-<!-- /wp:paragraph --></div></section>
-</div></main>
-<footer class="site"><div class="container">&copy; <span id="y"></span> Srijana Shrestha · Built with GitHub Pages</div></footer>
-<script>document.getElementById('y').textContent=new Date().getFullYear();</script>
-</body></html>
+<p>Redirecting to <a href="/#about">Profile</a>...</p>
+</body>
+</html>
